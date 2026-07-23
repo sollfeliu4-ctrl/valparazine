@@ -1,19 +1,249 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
 
 <head>
 
-<title>Valparazine</title>
+<meta charset="UTF-8">
+
+<title>VALPARAZINE</title>
+
+<style>
+
+body{
+
+margin:0;
+
+overflow:hidden;
+
+background:#17151d;
+
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+/* CIELO */
+
+.cielo{
+
+width:100vw;
+
+height:100vh;
+
+background:
+linear-gradient(
+#17151d,
+#25264f
+);
+
+position:relative;
+
+}
+
+
+/* LUNA */
+
+.luna{
+
+position:absolute;
+
+top:80px;
+
+right:150px;
+
+width:90px;
+
+height:90px;
+
+background:#fab4dd;
+
+border-radius:50%;
+
+box-shadow:
+0 0 40px #fab4dd;
+
+animation:luz 4s infinite alternate;
+
+}
+
+
+@keyframes luz{
+
+from{
+opacity:.7;
+}
+
+to{
+opacity:1;
+}
+
+}
+
+
+/* TITULO */
+
+.titulo{
+
+position:absolute;
+
+top:100px;
+
+width:100%;
+
+text-align:center;
+
+color:#fab4dd;
+
+font-size:35px;
+
+letter-spacing:15px;
+
+text-shadow:
+0 0 15px #fab4dd;
+
+}
+
+
+/* CIUDAD */
+
+.ciudad{
+
+position:absolute;
+
+bottom:180px;
+
+width:100%;
+
+text-align:center;
+
+font-size:80px;
+
+}
+
+
+/* MAR */
+
+.mar{
+
+position:absolute;
+
+bottom:0;
+
+width:100%;
+
+height:180px;
+
+background:#192d4d;
+
+animation:olas 5s infinite alternate;
+
+}
+
+
+@keyframes olas{
+
+from{
+
+height:170px;
+
+}
+
+to{
+
+height:190px;
+
+}
+
+}
+
+
+/* BOTON */
+
+.boton{
+
+position:absolute;
+
+bottom:70px;
+
+width:100%;
+
+text-align:center;
+
+}
+
+
+button{
+
+background:none;
+
+border:1px solid #fab4dd;
+
+padding:15px 40px;
+
+color:#fab4dd;
+
+font-family:Arial;
+
+cursor:pointer;
+
+letter-spacing:5px;
+
+}
+
+
+button:hover{
+
+background:#fab4dd;
+
+color:#17151d;
+
+}
+
+
+</style>
 
 </head>
 
 
 <body>
 
-<h1>Bienvenida al Puerto Digital</h1>
 
-<p>Un archivo vivo de Valparaíso.</p>
+<div class="cielo">
+
+
+<div class="luna"></div>
+
+
+<div class="titulo">
+
+V A L P A R A Z I N E
+
+</div>
+
+
+<div class="ciudad">
+
+🏠🏠🏠🏠🏠
+
+</div>
+
+
+<div class="mar"></div>
+
+
+<div class="boton">
+
+<button>
+
+DESEMBARCAR
+
+</button>
+
+</div>
+
+
+</div>
+
 
 </body>
 

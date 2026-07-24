@@ -123,54 +123,6 @@ filter:blur(0);
 
 
 
-/* LUNA */
-
-.luna{
-
-position:absolute;
-
-top:80px;
-
-right:150px;
-
-width:90px;
-
-height:90px;
-
-background:#fab4dd;
-
-border-radius:50%;
-
-
-box-shadow:
-
-0 0 40px #fab4dd;
-
-
-animation:luz 4s infinite alternate;
-
-}
-
-
-
-@keyframes luz{
-
-
-from{
-
-opacity:.6;
-
-}
-
-
-to{
-
-opacity:1;
-
-}
-
-
-}
 
 
 
